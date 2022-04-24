@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url('../assets/img/bg09.jpg');  
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+   
+}
+ 
+header{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+    background-color: #2C4001;
+    border-bottom: 6px solid #2C4001;
+    margin-bottom: 40px; 
+     box-shadow: 12px rgb(5, 39, 7); 
+     color: white;
+}
+ 
+main{
+    margin: auto;
+    width: 80%;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #172601;
+    padding:30px 0;
+    border-radius: 10px;
+}
+.video{
+    width: 100%;
+    height: 100%;
+}
+.container_title_video{
+     
+    position: absolute;
+    width: 100%;
+    height: 940px;
+ 
+    transform: translateY(-50%);
+}
+#title_video h3{
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+ 
+}
+.title{
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+
+.controles{
+    width: 100%;
+    height:  30px;
+    transition: 0.8s;
+    opacity:  0; 
+}
+.controles:hover{
+    opacity: 100%; 
+    cursor: pointer;
+   
+}
+.controle{
+    display: flex;
+    justify-content: space-around;
+    background-color: #3d5902;
+    position: absolute;
+    top: 90%;
+    bottom: 20;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    text-align: left;
+    
+}
+.volume{
+   
+    
+     
+}
+
+.progress-wrap{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 8px;
+    background-color: gray;
+     
+}
+ 
+#progress-bar{
+    background-color: red;
+    height: 100%;
+    width: 0;
+}
+.controle img{
+    position: relative;
+    width: 30px; 
+    height: 30px;
+    top: 97%;  
+    /* right: 25%; */
+    padding: 1px;
+    transform: translateY(-100%);
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+}
+.controle img:hover{
+    background:rgba(240, 248, 255, 0.452);
+}
+.vol{
+    
+    
+}
+
+
+.vol_bar{
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 100px;
+    height: 12px;
+    margin-top: 8px;
+    outline: none;
+    border-radius: 10px;
+    background-color: #c0c9b4;
+    
+}
+.vol_bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    background-color: #172601;
+}
+
+.list_videos{
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #172601;
+    border-radius: 10px;
+
+    box-shadow: 0px 5px 10px #172601;
+}
+/* Nesta div temos dois elementos <Img/> e <h3/> */
+.list_video_poster{
+    display: flex;
+    background-color: #3E5902;
+    border-radius: 10px;
+    margin: 5px 10px;
+    padding: 2px;
+}
+.list_video_poster:hover{
+    background-color: #618C03;
+}
+.img_list{
+    width: 150px;
+   
+}
+.list_videos h3{
+    margin-left: 5px;
+    margin-top: 2px;
+    color: white;
+}
+.list_videos h3:hover{
+     text-shadow: 2px 2px 2px black;
+}
+.footer{
+    display: flex;
+    align-content: center;
+    background-color: #172601;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #8ABF17;
+
+}
+.footer p{
+    color: white;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+   
+}
+
+@media screen and (max-width: 768px){
+     .container{
+          height: 300px; 
+          
+     }
+     .controles{
+        transition: 200ms;
+        opacity:  0;
+     }
+     .controles:hover{
+         opacity: 1;
+     }
+     .controle img{
+         width: 20px;
+         height: 20px;
+         top: 60%;  
+         padding: 2px;
+         transform: translateY(-100%);
+     }
+     .vol_bar{
+         height: 10px;
+         width: 70px;
+     }
+     .vol_bar::-webkit-slider-thumb{
+         height: 10px;
+         width: 10px;
+     }
+     .container_title_video{
+        position: absolute;
+        width: 100%;
+        height: 500px;
+     
+        transform: translateY(-54%);
+     }
+}

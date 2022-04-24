@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de video</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Animais Exóticos</h1>
+    </header>
+    <main>
+        
+        <div class="container">
+            <video id="video01" class="video" src="./assets/video/tucano.mp4" poster="./assets/img/tucano.jpg"></video>
+            <div class="controles">
+
+                <div class="container_title_video">
+                    <h3 class="title" id='title_video'>Tucano</h3>
+                </div>
+                
+                <div class="progress-wrap">
+                    <div id="progress-bar">
+                    </div>
+                </div>
+                <div class="controle">
+                    <div class="btns">
+                        <img id="btn-back" src="./assets/img/ten_to_left.png" alt="">
+                        <img id="btn-decrease" src="./assets/img/rewind-button.png" alt="">
+                        <img id="btn-play" status="true" src="./assets/img/play-buttton.png" alt="">
+                        <img id="btn-stop" src="./assets/img/stop-button.png" alt="">
+                        <img id="btn-increase" src="./assets/img/fast-forward-button.png" alt="">
+                        <img id="btn-forward" src="./assets/img/ten_to_right.png" alt="">
+                    </div>
+                
+                    
+
+                    <div class="volume">
+                        <img class="btn-vol vol" onclick="mudo()" id="imageVol" src="./assets/img/vol_alto.png" alt="">
+                        <input type="range" id="vol_bar" onchange="nivelVol()" class="vol_bar vol" min="0" max="100" step="0.5" value="100">
+                    </div>
+                    
+                </div>
+ 
+            </div>
+        </div>
+        <section>
+            <div class="list_videos">
+                
+                <div class="list_video_poster">
+                    <img class="img_list" src="./assets/img/elefante.jpg" alt="">
+                    <h3>Elefante</h3>
+                </div>
+                <div class="list_video_poster">
+                    <img class="img_list" src="./assets/img/leao.jpg" alt="">
+                    <h3>Leão</h3>
+                </div>
+                <div class="list_video_poster">
+                    <img class="img_list" src="./assets/img/gafanhoto.webp" alt="">
+                    <h3>Gafanhoto</h3>
+                </div>
+                <div class="list_video_poster">
+                    <img class="img_list" src="./assets/img/tucano.jpg" alt="">
+                    <h3>tucano</h3>
+                </div>
+                <div class="list_video_poster">
+                    <img class="img_list" src="./assets/img/peixe-palhaço.jpg" alt="">
+                    <h3>Peixe-palhaço</h3>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Feito para fins de aprendizado. Abril - 2022</p>
+            
+        </div>
+    </footer>
+     
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/def565f843.js" crossorigin="anonymous"></script>
+</body>
+</html>
